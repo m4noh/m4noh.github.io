@@ -1,0 +1,27 @@
+/* IBM Plex Sans 読み込み */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+
+/* ヘッダー全体 */
+#header {
+  background: #ffffff;        /* 背景色（必要に応じて変更） */
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* タイトル文字を「マノウ」にする */
+#header h1 a {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 2.5rem;          /* 大きさ調整 */
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+
+/* サブタイトルがある場合 */
+#header h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1rem;
+  color: #666;
+}
