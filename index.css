@@ -1,29 +1,35 @@
-/* IBM Plex Sans 読み込み */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
-
-/* ヘッダー全体 */
-#header {
-  background: #ffffff;        
-  border-bottom: 1px solid #ddd;
-  padding: 20px;
-  text-align: left;  /* ← 左寄せ */
+element.style {
 }
-
-/* タイトル文字 */
-#header h1 a {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #222;
-  letter-spacing: 0.05em;
-  text-decoration: none;
-  display: inline-block; /* 左寄せで幅調整 */
+body {
+    #blog-header {
+        height: 100px;
+        background-color: #006aff;
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+        position: relative;
+    }
 }
-
-/* サブタイトル */
-#header h2 {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 1rem;
-  color: #666;
-  margin-top: 5px;
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+}
+ユーザー エージェント スタイルシート
+header {
+    display: block;
+    unicode-bidi: isolate;
+}
+body {
+    color: #1e1e1e;
+    font-family: "Noto Sans JP", serif;
+}
+body {
+    word-wrap: break-word;
+}
+html {
+    color: #000;
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
