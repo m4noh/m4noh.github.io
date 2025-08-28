@@ -3,25 +3,27 @@
 
 /* ヘッダー全体 */
 #header {
-  background: #ffffff;        /* 背景色（必要に応じて変更） */
+  background: #ffffff;        
   border-bottom: 1px solid #ddd;
-  text-align: center;
-  padding: 20px 0;
+  padding: 20px;
+  text-align: left;  /* ← 左寄せ */
 }
 
-/* タイトル文字を「マノウ」にする */
+/* タイトル文字 */
 #header h1 a {
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 2.5rem;          /* 大きさ調整 */
+  font-size: 2.5rem;
   font-weight: 700;
   color: #222;
   letter-spacing: 0.05em;
   text-decoration: none;
+  display: inline-block; /* 左寄せで幅調整 */
 }
 
-/* サブタイトルがある場合 */
+/* サブタイトル */
 #header h2 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 1rem;
   color: #666;
+  margin-top: 5px;
 }
