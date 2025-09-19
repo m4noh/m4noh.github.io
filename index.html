@@ -1,18 +1,139 @@
-<header class="p-header">
-  <div class="p-header__inner l-header">
-    <h1 class="p-header__logo"><a href="https://tbsradio.co.jp/"><img src="/files/user/images/logo-tbsradio.svg?v=1584958524" alt="TBSラジオ"></a></h1>
-    <button class="icon-animation type-1" data-js="nav-menu" role="button" aria-controls="nav-menu-list" aria-expanded="false">
-      <span class="top"></span>
-      <span class="middle"></span>
-      <span class="bottom"></span>
-    </button>
-    <ul id="nav-menu-list" class="p-header__menu" hidden="">
-                	  <li class="p-header__menu__item"><a href="https://tbsradio.co.jp/company/" id="generated-id-1756402410711-cfwi6qxbe">会社情報</a></li>
-            	  <li class="p-header__menu__item"><a href="https://tbsradio.co.jp/philosophy/" id="generated-id-1756402410711-77qy1wb7x">コーポレートフィロソフィー</a></li>
-            	  <li class="p-header__menu__item"><a href="https://tbsradio.co.jp/regulation/standard/" id="generated-id-1756402410711-6ypgc42fj">番組制作と放送のルール</a></li>
-            	  <li class="p-header__menu__item"><a href="https://tbsradio.co.jp/shingikai/" id="generated-id-1756402410711-oojcjae6r">番組審議会</a></li>
-            	  <li class="p-header__menu__item"><a href="https://tbsradio.co.jp/recruit/" id="generated-id-1756402410711-6tcz6pxb1">採用</a></li>
-            <li class="p-header__menu__item"><a rel="noopener" href="https://tbsrsales.jp/" target="_blank" id="generated-id-1756402410711-xe77s2wqb">営業情報</a></li>
-    </ul>
-  </div>
+<!DOCTYPE html>
+<html lang="ja" itemscope itemtype="http://schema.org/Blog">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<$HeadSectionCommon$>
+<meta name="description" content="<$BlogDescription ESCAPE$>" />
+<$OGP$>
+<link rel="alternate" media="handheld" type="application/xhtml+xml" href="<$BlogMobileUrl$>" />
+<IfFoafUrl><link rel="meta" type="application/rdf+xml" title="FOAF" href="<$FoafUrl$>" /></IfFoafUrl>
+<title><$BlogTitle ESCAPE$></title>
+<!--[if lt IE 9]>
+<script src="<$PartsBaseUrl$>/js/html5.js"></script>
+<![endif]-->
+<script src="<$PartsBaseUrl$>/js/usr/import.js"></script>
+</head>
+<body class="default_2012 page-index layout-2col sidebar-right">
+
+<$BlogHeader$>
+
+<div id="wrapper">
+
+<div id="container">
+<!-- ブログタイトル、説明 -->
+<header id="blog-header">
+	<div id="blog-header-inner">
+		<h1 id="blog-title"><a href="<$BlogUrl$>"><$BlogTitle ESCAPE$></a></h1>
+		<IfBlogDescription><p id="blog-description"><$BlogDescription$></p></IfBlogDescription>
+	</div>
 </header>
+<!-- /ブログタイトル、説明 -->
+
+<$MenuList$>
+
+<div id="content">
+
+<div id="main">
+<div id="main-inner">
+
+<$MessageBoard$>
+
+<!-- google_ad_section_start -->
+<IndexArticlesLoop>
+
+<$TrackBackAutoDiscovery$>
+<!-- 記事全体 -->
+<article class="article<IfFirstArticle> first-article</IfFirstArticle><IfLastArticle> last-article</IfLastArticle>" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="article-inner">
+
+<IfArticleCoverImage>
+<div class="article-first-image">
+    <SetVar ThumbnailHeight>250</SetVar><SetVar ThumbnailWidth>250</SetVar>
+    <IfArticleCoverImage><a href="<$ArticlePermalink$>" itemprop="url"><img src="<$ArticleCoverImageThumbnail$>" /></a></IfArticleCoverImage>
+</div>
+</IfArticleCoverImage>
+
+<div<IfArticleCoverImage> class="article-box"</IfArticleCoverImage>>
+
+<!-- 記事ヘッダー、記事タイトル -->
+<header class="article-header">
+    <h1 class="article-title" itemprop="name"><a href="<$ArticlePermalink$>" itemprop="url"><$ArticleTitle ESCAPE$></a></h1>
+    <p class="article-date"><time datetime="<$ArticleDateISO8601$>" itemprop="datePublished"><$ArticleDate$></time></p>
+	<IfArticleRating><span class="article-rating"><$ArticleRatingIcon$></span></IfArticleRating>
+</header>
+
+<!-- /記事ヘッダー、記事タイトル -->
+
+<!-- 記事本文 -->
+<div class="article-body">
+	<div class="article-body-inner">
+    <$ArticleDescription ESCAPE$><IfArticleDescription> ...</IfArticleDescription>
+	<span class="article-continue"><a href="<$ArticlePermalink$>#more"><span class="more_icon"></span>もっと読む</a></span>
+	</div>
+</div>
+
+<!-- /記事本文 -->
+
+<!-- 記事フッター、カテゴリ、コメント、ソーシャルボタン -->
+<footer class="article-footer">
+	<ul class="article-meta">
+        <li class="article-tags-wrap"><$ArticleTagsList$></li>
+		<IfArticleAllowComment>
+		<li class="article-comment-count">
+			<dl><dt>コメント</dt><dd><a href="<$ArticlePermalink$>#comments"><$ArticleCommentCount$> 件</a></dd></dl>
+		</li>
+		</IfArticleAllowComment>
+    </ul>
+	<div class="article-social-btn">
+		<$ArticleToolBox$>
+	</div>
+</footer>
+<!-- /記事フッター、カテゴリ、コメント、ソーシャルボタン -->
+</div>
+</div>
+</article>
+<!-- /記事全体 -->
+
+<IfFirstArticle><$Advertise$></IfFirstArticle>
+
+</IndexArticlesLoop>
+<!-- google_ad_section_end -->
+
+<!-- ページ送り -->
+<SetVar NavigatorType>2</SetVar>
+<SetVar NavigatorPrevPageText>&laquo;</SetVar>
+<SetVar NavigatorNextPageText>&raquo;</SetVar>
+<$IndexNavigator$>
+<!-- /ページ送り -->
+
+<!-- /#main-inner --></div>
+<!-- /#main --></div>
+
+<!-- サイドバー -->
+<aside id="sidebar" class="column">
+<div id="sidebar-inner">
+<$PluginList_A$>
+<$PluginList_B$>
+</div>
+<$LDServices$>
+</aside>
+<!-- /サイドバー -->
+
+<p class="to-pagetop"><a href="#">↑このページのトップヘ</a></p>
+
+<!-- /#content --></div>
+<!-- /#container --></div>
+
+<!-- ブログのフッター -->
+<footer id="blog-footer">
+<$BlogFooter$>
+</footer>
+<!-- /ブログのフッター -->
+
+<!-- /#wrapper --></div>
+
+</body>
+</html>
