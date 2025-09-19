@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>記事タイトル : サイトタイトル</title>
+  <meta name="description" content="この記事の説明文が入ります。">
+
+  <!-- OGP -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="記事タイトル">
+  <meta property="og:description" content="この記事の説明文が入ります。">
+  <meta property="og:site_name" content="サイトタイトル">
+  <meta property="og:image" content="images/ogp.jpg">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-article layout-2col sidebar-right">
+
+<header id="blog-header">
+  <div id="blog-header-inner">
+    <h1 id="blog-title"><a href="index.html">サイトタイトル</a></h1>
+    <p id="blog-description">ここにブログの説明文が入ります。</p>
+  </div>
+</header>
+
+<nav id="menu">
+  <ul>
+    <li><a href="index.html">ホーム</a></li>
+    <li><a href="archive.html">記事一覧</a></li>
+    <li><a href="about.html">このブログについて</a></li>
+  </ul>
+</nav>
+
+<div id="content">
+  <div id="main">
+    <div id="main-inner">
+
+      <article class="article first-article">
+        <header class="article-header">
+          <h1 class="article-title detail_title">記事タイトル</h1>
+          <p class="article-date"><time datetime="2025-09-18">2025年9月18日</time></p>
+        </header>
+
+        <div class="article-body">
+          <div class="article-body-inner">
+            <p>ここに記事本文が入ります。ライブドアブログから移した内容を貼り付ければOKです。</p>
+          </div>
+        </div>
+
+        <footer class="article-footer">
+          <ul class="article-meta">
+            <li class="article-category"><a href="category.html">カテゴリ名</a></li>
+            <li class="article-tags-wrap">タグ: <a href="tag.html">サンプルタグ</a></li>
+            <li class="article-author">by 管理人</li>
+          </ul>
+        </footer>
+      </article>
+
+    </div>
+  </div>
+
+  <aside id="sidebar" class="column">
+    <div id="sidebar-inner">
+      <h2>サイドバー</h2>
+      <ul>
+        <li><a href="#">最近の記事</a></li>
+        <li><a href="#">人気の記事</a></li>
+        <li><a href="#">カテゴリ</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<footer id="blog-footer">
+  <p>&copy; 2025 サイトタイトル</p>
+</footer>
+
+</body>
+</html>
