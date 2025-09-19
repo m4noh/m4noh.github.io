@@ -10,7 +10,7 @@
 body, html {
   font-family: 'IBM Plex Sans JP', sans-serif;
   background: #f9f9f9;
-  color: #333;
+  color: #111;
 }
 
 /*---------------------------------
@@ -22,7 +22,8 @@ body, html {
   left: 0;
   width: 100%;
   backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 170, 0.1); /* 透明ブルー */
+  color: #0000aa;
   z-index: 1000;
   padding: 10px 20px;
 }
@@ -32,46 +33,39 @@ body, html {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center; /* タイトル中央寄せ */
+  justify-content: center;
 }
 
 #blog-title a {
-  font-size: 1.8em;
   font-weight: 600;
   text-decoration: none;
-  color: #111;
+  color: #0000aa;
+  white-space: nowrap; /* 1行で収める */
+  font-size: clamp(1.2rem, 5vw, 1.8rem);
 }
 
 /*---------------------------------
   ページラッパー
 ---------------------------------*/
 #wrapper {
-  padding-top: 80px; /* ヘッダー分の余白 */
+  padding-top: 70px; /* ヘッダー高さ分 */
 }
 
 /*---------------------------------
-  コンテンツ・サイドバー
+  コンテンツ幅
 ---------------------------------*/
 #container {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 #content {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
 }
 
 #main {
-  flex: 1 1 100%; /* サイドバー消したので幅100% */
+  width: 100%; /* サイドバーなし */
   padding: 20px;
-}
-
-#sidebar {
-  display: none; /* サイドバー非表示 */
 }
 
 /*---------------------------------
@@ -91,14 +85,14 @@ body, html {
 }
 
 .article-title a {
-  font-size: 1.5em;
-  color: #111;
+  font-size: 1.4em;
+  color: #0000aa;
   text-decoration: none;
 }
 
 .article-date {
   font-size: 0.9em;
-  color: #888;
+  color: #5555ff;
   margin-top: 5px;
 }
 
@@ -133,14 +127,18 @@ body, html {
 .to-pagetop a {
   text-decoration: none;
   font-size: 0.9em;
-  color: #555;
+  color: #0000aa;
+}
+
+.to-pagetop a:hover {
+  text-decoration: underline;
 }
 
 /*---------------------------------
-  目立つリンク・ホバー
+  リンク・ホバー
 ---------------------------------*/
 a {
-  color: #1a73e8;
+  color: #0000aa;
 }
 
 a:hover {
@@ -172,11 +170,10 @@ a:hover {
 }
 
 /*---------------------------------
-  レスポンシブ微調整
+  レスポンシブ調整
 ---------------------------------*/
 @media screen and (max-width: 900px) {
   #main {
-    flex: 1 1 100%;
     padding: 10px;
   }
 }
@@ -184,11 +181,11 @@ a:hover {
 @media screen and (max-width: 600px) {
   #blog-header-inner {
     flex-direction: column;
-    align-items: center; /* スマホでも中央寄せ */
+    align-items: center;
   }
 
-  #blog-title {
-    margin-bottom: 10px;
+  #blog-title a {
+    font-size: clamp(1rem, 6vw, 1.5rem);
   }
 
   .article-footer {
